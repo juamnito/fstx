@@ -1,74 +1,74 @@
 % --------- Definiciones de teoremas, definiciones, axiomas, problemas...
 
-\newenvironment{proof}[1][\textbf{\textit{Demostración}}]{
-     \par\medskip\noindent
-     \textcolor{tscolor}{#1.}
-     \rmfamily
-}{
-    $\hfill\textcolor{tscolor}{\blacksquare}$\\
-}
-
-\newenvironment{solution}[1][\textbf{\textit{Solución}}]{
-     \par\medskip\noindent
-     \textcolor{tscolor}{#1.}
-     \rmfamily
-}{
-    $\hfill\textcolor{tscolor}{\square}$\\
-}
-
-\newcounter{definition}
-\newenvironment{definition}[1][\thedefinition]{
-    \begin{tcolorbox}[
-        colback=white!20,
-        colframe=white,
-        arc=3mm,
-        outer arc=1mm,
-        sharp corners=downhill
-        ]
-        \refstepcounter{definition}
-        \noindent
-        \color{tscolor}
-        \textbf{Definición~#1.}
-        \rmfamily
-}{
-    \end{tcolorbox}
-    \medskip
-}
-
-\newcounter{lemma}
-\newenvironment{lemma}[1][\thelemma]{
-    \begin{tcolorbox}[
-        colback=white!20,
-        colframe=white,
-        arc=3mm,
-        outer arc=1mm,
-        sharp corners=downhill
-        ]
-        \refstepcounter{lemma}
-        \noindent
-        \color{tscolor}
-        \textbf{Lema~#1.}
-        \rmfamily
-}{
-    \end{tcolorbox}
-    \medskip
-}
-
-\newcounter{theorem}
-\newenvironment{theorem}[1][\thetheorem]{
-    \begin{tcolorbox}[
-        colback=white!20,
-        colframe=\tscolframe!0,
-        arc=3mm,
-        outer arc=1mm,
-        sharp corners=downhill
-        ]
-        \refstepcounter{theorem}
-        \noindent
-        \color{tscolor}
-        \textbf{Teorema~#1.}
-        \rmfamily
-}{
-    \end{tcolorbox}
-    \medskip
-}
+\newenvironment{myproof}[1][\textbf{\textit{Demostración}}]{
+      \par\medskip\noindent
+      \textcolor{tscolor}{#1.}
+      \rmfamily
+ }{
+     $\hfill\textcolor{tscolor}{\blacksquare}$\\
+ }
+ 
+% \newenvironment{solution}[1][\textbf{\textit{Solución}}]{
+%      \par\medskip\noindent
+%      \textcolor{tscolor}{#1.}
+%      \rmfamily
+% }{
+%     $\hfill\textcolor{tscolor}{\square}$\\
+% }
+% 
+% \newcounter{definition}
+% \newenvironment{definition}[1][\thedefinition]{
+%     \begin{tcolorbox}[
+%         colback=white!20,
+%         colframe=white,
+%         arc=3mm,
+%         outer arc=1mm,
+%         sharp corners=downhill
+%         ]
+%         \refstepcounter{definition}
+%         \noindent
+%         \color{tscolor}
+%         \textbf{Definición~#1.}
+%         \rmfamily
+% }{
+%     \end{tcolorbox}
+%     \medskip
+% }
+% 
+% \newcounter{lemma}
+% \newenvironment{lemma}[1][\thelemma]{
+%     \begin{tcolorbox}[
+%         colback=white!20,
+%         colframe=white,
+%         arc=3mm,
+%         outer arc=1mm,
+%         sharp corners=downhill
+%         ]
+%         \refstepcounter{lemma}
+%         \noindent
+%         \color{tscolor}
+%         \textbf{Lema~#1.}
+%         \rmfamily
+% }{
+%     \end{tcolorbox}
+%     \medskip
+% }
+% 
+% \newcounter{theorem}
+% \newenvironment{theorem}[1][\thetheorem]{
+%     \begin{tcolorbox}[
+%         colback=white!20,
+%         colframe=\tscolframe!0,
+%         arc=3mm,
+%         outer arc=1mm,
+%         sharp corners=downhill
+%         ]
+%         \refstepcounter{theorem}
+%         \noindent
+%         \color{tscolor}
+%         \textbf{Teorema~#1.}
+%         \rmfamily
+% }{
+%     \end{tcolorbox}
+%     \medskip
+% }

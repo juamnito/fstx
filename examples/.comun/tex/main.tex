@@ -11,6 +11,13 @@
 \input{lib/mth-envs.tex}
 \input{lib/col.tex}
 
+\makeatletter
+\let\c@lista\relax  % Elimina la definición previa del contador
+\makeatother
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliografia.bib}
+
 \newcommand{\tema}{Tarea <++>}
 
 \begin{document}
@@ -18,7 +25,13 @@
         \LARGE\titulo
     \end{center}
     \vspace{1mm}
+
+	% Si es un artículo, proyecto, etc.
+		% \tableofcontents
+
     % ========================== EJERCICIOS ==========================
     \input{ejercicios/tree}
 	% ======================== FIN DE DOCUMENTO ======================
+	% \newpage
+	% \printbibliography[heading=bibintoc,title={Referencias}]
 \end{document}

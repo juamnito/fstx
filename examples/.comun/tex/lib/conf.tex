@@ -8,8 +8,24 @@
     bottom=2.0cm
 ]{geometry}
 
+% Interlineado
+
+	\usepackage{setspace}
+
+	\renewcommand{\baselinestretch}{1}
+
 % Paquetes matemáticos
 \usepackage{amsmath, amssymb}
+\usepackage{amsthm}
+
+	\newtheorem{theorem}{Teorema}
+	\newtheorem{proposition}[theorem]{Proposición}
+	\newtheorem{pregunta}[theorem]{Pregunta}
+	\newtheorem{definition}[theorem]{Definición}
+	\newtheorem{lemma}[theorem]{Lema}
+	\newtheorem{example}[theorem]{Ejemplo}
+	\newtheorem{observacion}[theorem]{Observación}
+	\newtheorem{notacion}[theorem]{Notación}
 
 \usepackage{enumitem}
 
@@ -64,12 +80,13 @@
 \newcounter{lista}
 \pagestyle{fancy}
     \fancyhf{}
-    \rhead{\fecha}
+	\rhead{\titulo}
+    %\rhead{\fecha}
     \lhead{\autor}
-    \rfoot{\textit{\textbf{Pág. \thepage}}}
+    \rfoot{\textit{\textbf{\thepage}}}
 
 % Tamaño de indentación
-\setlength\parindent{1.2cm}
+\setlength\parindent{1cm}
 
 % Hipervínculos
 \usepackage{hyperref}
