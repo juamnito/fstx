@@ -29,18 +29,42 @@
 \newcommand{\F}{    % Campo arbitrario ?
     \mathbb{F}
 }
+\newcommand{\Sf}{	% Esfera
+	\mathbb{S}
+}
+
+% Conjuntos vectoriales
+
+\newcommand{\GL}{
+	\mathrm{GL}
+}
+
+\newcommand{\SL}{
+	\mathrm{SL}
+}
+
+\newcommand{\Ort}{
+	\mathrm{O}
+}
+
+\newcommand{\SO}{
+	\mathrm{SO}
+}
+
+
 
     % Topología
 
-\newcommand{\Fr}{
-    \mathrm{Fr}\,
+\newcommand{\kleinb}{
+	\mathbb{K}
 }
 
-\newcommand{\cl}[1]{
-    \overline{#1}
+\newcommand{\T}{
+	\mathbb{T}
 }
-\newcommand{\interior}{
-    \mathrm{int}\,
+
+\newcommand{\teich}{
+	\mathcal{M}
 }
 
 \newcommand{\simtimes}{\mathbin{%
@@ -62,27 +86,16 @@
 	\mathrm{Diff}
 }
 
-    % Conjuntos asociados a funciones
-
-\newcommand{\im}[1]{    % Imagen de una función
-    \mathrm{Im} \,
-}
-\newcommand{\dom}[1]{   % Dominio de una función
-    \mathrm{Dom} \,
-}
 
     % Conjuntos asociados a funciones de Álgebra Lineal
 
-\newcommand{\kernel}[1]{   % Kérnel de una transformación lineal
-    \mathrm{Ker} \,
-}
-\newcommand{\setspan}[1]{   % Espacio generado por un conjunto
-    \mathrm{span} \,
+\newcommand{\ker}[1]{   % Kérnel de una transformación lineal
+    \mathrm{Ker}
 }
 
 \newcommand{\traza}[1]{
 	\textbf{traza}
-	\left( #1 \right) 
+	\left(#1\right) 
 }
 
 % ------- Funciones -------
@@ -119,23 +132,11 @@
         #1
     \right]
 }
-\newcommand{\ind}[2]{   % Función indicadora / Función característica
-    1_{#1}
-    \left(
-        #2
-    \right)
-}
 
     % dimensiones de Álgebra Lineal
 
 \renewcommand{\dim}{   % Dimensión
     \mathrm{dim} \,
-}
-\newcommand{\rango}[1]{ % Rango (dimensión del espacio imagen)
-    \mathrm{rango} \,
-}
-\newcommand{\nulidad}[1]{   % Nulidad (dimensión del kérnel)
-    \mathrm{nulidad} \,
 }
 
     % Números complejos
@@ -152,30 +153,6 @@
     \right)
 }
 
-% ----- Mapeos -----
-
-\newcommand{\To}{   % Flecha larga
-    \longrightarrow
-} 
-\newcommand{\mTo}{ % Flecha larga con cola (manda a)
-    \longmapsto
-} 
-
-% ----- Lógica -----
-
-\newcommand{\ssi}{  % Si y solo si (<=>)
-    \Leftrightarrow
-}
-\newcommand{\ent}{  % Entonces (=>)
-    \Rightarrow
-}
-\newcommand{\Ent}{  % Entonces largo (==>)
-    \Longrightarrow
-}
-\newcommand{\Ssi}{  % Si y solo si largo (<==>)
-    \Longleftarrow
-}
-
 % ----- Letras especiales ------
 
 \newcommand{\eps}{  % Épsilon bonita (siempre varépsilon)
@@ -190,11 +167,4 @@
 
 \newcommand{\Cinf}{
 	\mathcal{C}^\infty
-}
-
-\renewcommand{\div}{
-	\textbf{div}\,
-}
-\newcommand{\grad}{
-	\textbf{grad}\,
 }
